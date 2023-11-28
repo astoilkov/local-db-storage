@@ -1,14 +1,14 @@
-# `db-storage2`
+# `local-db-storage`
 
 > Tiny wrapper around `IndexedDB` that mimics `localStorage` API
 
-[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/db-storage2)](https://bundlephobia.com/result?p=db-storage2)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/db-storage2/main.yml?branch=main)](https://github.com/astoilkov/db-storage2/actions/workflows/main.yml)
+[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/local-db-storage)](https://bundlephobia.com/result?p=local-db-storage)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/local-db-storage/main.yml?branch=main)](https://github.com/astoilkov/local-db-storage/actions/workflows/main.yml)
 
 ## Install
 
 ```bash
-npm install db-storage2
+npm install local-db-storage
 ```
 
 ## Why
@@ -20,7 +20,7 @@ npm install db-storage2
 ## Usage
 
 ```ts
-import dbStorage from 'db-storage2'
+import dbStorage from 'local-db-storage'
 
 async function addTodo(todo): Promise<void> {
     await dbStorage.setItem(todo.id, todo)
