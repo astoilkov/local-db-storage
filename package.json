@@ -1,9 +1,9 @@
 {
-    "name": "{{data.name}}",
+    "name": "db-storage",
     "version": "0.0.0",
-    "description": "{{data.description}}",
+    "description": "Tiny wrapper around `IndexedDB` that mimics `localStorage` API",
     "license": "MIT",
-    "repository": "astoilkov/{{data.name}}",
+    "repository": "astoilkov/db-storage",
     "funding": "https://github.com/sponsors/astoilkov",
     "author": {
         "name": "Antonio Stoilkov",
@@ -11,7 +11,11 @@
         "url": "https://astoilkov.com"
     },
     "keywords": [
-        "{{data.keywords}}"
+        "IndexedDB",
+        "localStorage",
+        "setItem",
+        "getItem",
+        "removeItem"
     ],
     "type": "module",
     "exports": {
@@ -35,6 +39,7 @@
     ],
     "devDependencies": {
         "@vitest/coverage-v8": "^0.33.0",
+        "fake-indexeddb": "^5.0.1",
         "jsdom": "^22.1.0",
         "np": "^8.0.4",
         "prettier": "^3.0.3",
