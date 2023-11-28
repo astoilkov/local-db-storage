@@ -3,7 +3,7 @@ import "fake-indexeddb/auto";
 import dbStorage from "./index";
 import { beforeEach, describe, expect, test } from "vitest";
 
-describe("db-storage", () => {
+describe("db-storage2", () => {
     beforeEach(async () => {
         await dbStorage.clear();
     });

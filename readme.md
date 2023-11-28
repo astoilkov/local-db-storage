@@ -1,24 +1,27 @@
-# `db-storage`
+# `db-storage2`
 
 > Tiny wrapper around `IndexedDB` that mimics `localStorage` API
 
-[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/db-storage)](https://bundlephobia.com/result?p=db-storage)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/db-storage/main.yml?branch=main)](https://github.com/astoilkov/db-storage/actions/workflows/main.yml)
+[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/db-storage2)](https://bundlephobia.com/result?p=db-storage2)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/db-storage2/main.yml?branch=main)](https://github.com/astoilkov/db-storage2/actions/workflows/main.yml)
 
 ## Install
 
 ```bash
-npm install db-storage
+npm install db-storage2
 ```
 
 ## Why
 
 - If you want to use IndexedDB but don't want to deal with its complex API.
-- If you want to store more data than what `localStorage` supports but still want a simple API.
+- If you want to store more data than what `localStorage` supports but still want the  same API.
+- The most popular library [`localForage`](https://github.com/localForage/localForage) is bloated and unmaintained.
 
 ## Usage
 
 ```ts
+import dbStorage from 'db-storage2'
+
 async function addTodo(todo): Promise<void> {
     await dbStorage.setItem(todo.id, todo)
 }

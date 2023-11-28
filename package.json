@@ -1,9 +1,9 @@
 {
-    "name": "db-storage",
+    "name": "db-storage2",
     "version": "0.0.0",
     "description": "Tiny wrapper around `IndexedDB` that mimics `localStorage` API",
     "license": "MIT",
-    "repository": "astoilkov/db-storage",
+    "repository": "astoilkov/db-storage2",
     "funding": "https://github.com/sponsors/astoilkov",
     "author": {
         "name": "Antonio Stoilkov",
