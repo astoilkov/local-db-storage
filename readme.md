@@ -40,7 +40,9 @@ Like `localStorage.getItem()` but async.
 
 #### `setItem(key: string, value: any): Promise<void>`
 
-Like `localStorage.setItem()` but async. It supports non-primitive values like objects. It also supports circular references.
+Like `localStorage.setItem()` but async.
+
+_Note:_ It supports non-primitive values (ex: objects). It also supports circular references.
 
 #### `removeItem(key: string): Promise<void>`
 
@@ -49,6 +51,18 @@ Like `localStorage.removeItem()` but async.
 #### `clear(): Promise<void>`
 
 Like `localStorage.clear()` but async.
+
+#### `DBStorage(name: string)`
+
+Creates a new `DBStorage` instance.
+
+```ts
+import { DBStorage } from 'local-db-storage'
+
+const dbStorage = new DBStorage('my-custom-db-storage')
+
+await dbStorage.setItem('initial', 'hello world')
+```
 
 ## Related
 
