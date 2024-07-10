@@ -12,7 +12,9 @@
     },
     "keywords": [
         "IndexedDB",
+        "Storage",
         "localStorage",
+        "sessionStorage",
         "setItem",
         "getItem",
         "removeItem"
