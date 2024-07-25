@@ -15,7 +15,7 @@ npm install local-db-storage
 
 - If you want to use `IndexedDB` but don't want to deal with its complex API.
 - If you want to store more data than what `localStorage` supports but still want the same API.
-- The most popular library [`localForage`](https://github.com/localForage/localForage) is complex and unmaintained.
+- The most popular library [`localForage`](https://github.com/localForage/localForage) (25k stars) is complex and unmaintained.
 - I've been consistent in maintaining [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) (400k downloads per month) for the past 4 years.
 
 ## Usage
