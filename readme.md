@@ -1,6 +1,6 @@
 # `local-db-storage`
 
-> Tiny wrapper around `IndexedDB` that mimics `localStorage` API
+> IndexedDB wrapper that mimics localStorage API
 
 [![Gzipped Size](https://img.shields.io/bundlephobia/minzip/local-db-storage)](https://bundlephobia.com/result?p=local-db-storage)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/local-db-storage/main.yml?branch=main)](https://github.com/astoilkov/local-db-storage/actions/workflows/main.yml)
