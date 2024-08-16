@@ -1,6 +1,6 @@
 {
     "name": "local-db-storage",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "IndexedDB wrapper that mimics localStorage API",
     "license": "MIT",
     "repository": "astoilkov/local-db-storage",
