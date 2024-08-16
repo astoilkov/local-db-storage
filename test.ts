@@ -1,6 +1,6 @@
 import "fake-indexeddb/auto";
 
-import dbStorage from "./index";
+import dbStorage from "./index.js";
 import { beforeEach, describe, expect, test } from "vitest";
 
 describe("local-db-storage", () => {

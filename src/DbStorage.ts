@@ -1,4 +1,4 @@
-import waitRequest from "./waitRequest";
+import waitRequest from "./waitRequest.js";
 
 export default class DbStorage {
     #name: string;
