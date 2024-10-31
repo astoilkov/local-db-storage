@@ -66,5 +66,6 @@ await dbStorage.setItem('initial', 'hello world')
 
 ## Related
 
+- [`use-db`](https://github.com/astoilkov/use-db) — React hook for `IndexedDB` that uses this library and mimics `setState` API.
 - [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) — React hook that persists data in `localStorage`.
 - [`use-session-storage-state`](https://github.com/astoilkov/use-session-storage-state) — React hook that persists data in `sessionStorage`.
