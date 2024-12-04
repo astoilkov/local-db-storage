@@ -18,7 +18,7 @@ npm install local-db-storage
 - **Performance.** `IndexedDB` is async and doesn't block the UI. `IndexedDB` can store objects without serialization which shaves off the time to do `JSON.parse()` and `JSON.stringify()` that's needed when working with `localStorage`.
 - **No good alternatives.** The most popular library [`localForage`](https://github.com/localForage/localForage) (25k stars) is complex and unmaintained.
 - **Availability.** `IndexedDB` is available both in Web Worker and Service Worker, `localStorage` is not. You can write data in those places and then access it in the main thread.
-- **Maintenance.** I've been consistent in maintaining [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) (~500k downloads per month) for the past 4 years.
+- **Maintenance.** I've been consistently maintaining many open-source libraries including [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) with ~500k downloaders per month.
 
 ## Usage
 
