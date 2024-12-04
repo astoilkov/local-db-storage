@@ -2,7 +2,7 @@ import waitRequest from "./waitRequest.js";
 
 export default class DbStorage {
     #name: string;
-    #db: Promise<IDBDatabase> | undefined;
+    #db: IDBDatabase | undefined;
 
     constructor({ name }: { name: string }) {
         this.#name = name;
@@ -35,21 +35,20 @@ export default class DbStorage {
 
     async #getOrCreateDb(): Promise<IDBDatabase> {
         if (this.#db === undefined) {
-            this.#db = this.#openDb();
+            const request = indexedDB.open(this.#name, 1);
+
+            request.addEventListener("upgradeneeded", () => {
+                // e.oldVersion
+                // e.newVersion
+                const db = request.result;
+                db.createObjectStore("store");
+            });
+
+            this.#db = await waitRequest<IDBDatabase>(
+                request,
+                "Failed to open IndexedDB",
+            );
         }
         return this.#db;
-    }
-
-    async #openDb(): Promise<IDBDatabase> {
-        const request = indexedDB.open(this.#name, 1);
-
-        request.addEventListener("upgradeneeded", () => {
-            // e.oldVersion
-            // e.newVersion
-            const db = request.result;
-            db.createObjectStore("store");
-        });
-
-        return waitRequest(request, "Failed to open IndexedDB");
     }
 }
